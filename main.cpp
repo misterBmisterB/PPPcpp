@@ -6,17 +6,14 @@ Try This
 
 int al_cuadrado(int n)
 {
-    int m{0};
-    for (int i{0}; i <= n; ++i)
-    {
-        m = n + n;
-    }
+    int m{n};
+    for (int i = 1; i < n; ++i)
+        m = m + n;
     return m;
 }
 
 int main()
 {
-
     for (int i = 0; i < 100; ++i)
         cout << i << '\t' << al_cuadrado(i) << '\n';
 }
